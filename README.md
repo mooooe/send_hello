@@ -13,9 +13,9 @@
 |varchar|
 
 ### messages
-|user_id|format_id|text|image|
-|:---:|:---:|:---:|:---:|
-|integer|integer|text|text|
+|user_id|format_id|text|image|user_name|
+|:---:|:---:|:---:|:---:|:---:|
+|integer|integer|text|text|varchar|
 
 ### replies
 |user_id|message_id|text|user_name|
@@ -23,9 +23,9 @@
 |integer|integer|text|varchar|
 
 ### formats
-|format_id|
+|name|
 |:---:|
-|integer|
+|varchar|
 
 ## association
 ### users
@@ -39,3 +39,6 @@
 ###replies
 * belongs_to :user
 * belongs_to :message
+
+### formats
+* has_many :messages
