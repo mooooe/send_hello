@@ -34,6 +34,7 @@
 
 ### message
 * belongs_to :user
+* belongs_to :format
 * has_many :replies
 
 ###replies
