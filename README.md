@@ -1,24 +1,41 @@
-# README
+# data base design
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## overview
+*users can send greeting cards to other users and share the links
+*users can choose a greeting card from several choices
+*users can reply to other users
 
-Things you may want to cover:
+## tables
 
-* Ruby version
+### users
+|user_name|
+|:---:|
+|varchar|
 
-* System dependencies
+### messages
+|user_id|format_id|text|image|
+|:---:|:---:|:---:|:---:|
+|integer|integer|text|text|
 
-* Configuration
+### replies
+|user_id|message_id|text|user_name|
+|:---:|:---:|:---:|:---:|
+|integer|integer|text|varchar|
 
-* Database creation
+### formats
+|format_id|
+|:---:|
+|integer|
 
-* Database initialization
+## association
+### users
+* has_many :messages
+* has_many :replies
 
-* How to run the test suite
+### message
+* belongs_to :user
+* has_many :replies
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+###replies
+* belongs_to :user
+* belongs_to :message
