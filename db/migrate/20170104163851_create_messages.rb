@@ -5,8 +5,8 @@ class CreateMessages < ActiveRecord::Migration[5.0]
       t.integer :format_id
       t.text    :text
       t.text    :image
-      t.string  :user_name
-      t.integer :user_name_id
+      t.string  :receiver
+      t.integer :receiver_id
 
       t.timestamps
     end
