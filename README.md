@@ -10,22 +10,22 @@
 ### users
 |user_name|
 |:---:|
-|varchar|
+|string|
 
 ### messages
-|user_id|format_id|text|image|user_name|
-|:---:|:---:|:---:|:---:|:---:|
-|integer|integer|text|text|varchar|
+|user_id|format_id|text|image|user_name|user_name_id|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|integer|integer|text|text|string|integer|
 
 ### replies
 |user_id|message_id|text|user_name|
 |:---:|:---:|:---:|:---:|
-|integer|integer|text|varchar|
+|integer|integer|text|string|
 
 ### formats
 |name|
 |:---:|
-|varchar|
+|string|
 
 ## association
 ### users
