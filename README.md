@@ -8,17 +8,17 @@
 ## tables
 
 ### users
-|user_name|
+|nickname|
 |:---:|
 |string|
 
 ### messages
-|user_id|format_id|text|image|user_name|user_name_id|
+|user_id|format_id|text|image|nickname|nickname_id|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |integer|integer|text|text|string|integer|
 
 ### replies
-|user_id|message_id|text|user_name|
+|user_id|message_id|text|nickname|
 |:---:|:---:|:---:|:---:|
 |integer|integer|text|string|
 
