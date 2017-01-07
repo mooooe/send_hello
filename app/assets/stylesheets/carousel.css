@@ -7,6 +7,10 @@ body {
   color: #5a5a5a;
 }
 
+.img-circle {
+  border-radius: 0% !important;
+}
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -50,7 +54,7 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
-  background-color: #777;
+  background-color: #ca493c;
 }
 .carousel-inner > .item > img {
   position: absolute;
