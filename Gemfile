@@ -48,5 +48,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry-rails'
 gem 'compass-rails'
-gem 'twitter-bootstrap-rails'
+gem 'bootstrap-sass'
 gem 'devise'
