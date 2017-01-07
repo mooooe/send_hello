@@ -1,58 +1,13 @@
- <div class="navbar-wrapper">
-      <div class="container">
+<ul class="nav nav-tabs">
+  <li><a href="#sampleContentA" data-toggle="tab">受信box</a></li>
+  <li class="active"><a href="#sampleContentB" data-toggle="tab">送信box</a></li>
+</ul>
 
-<a class="btn btn-default" href="/users/sign_up" role="button">Sign up</a>
-<a class="btn btn-default" href="/users/sign_in" role="button">Sign in</a>
-       <!-- <nav class="navbar navbar-default navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="/">Send Hello</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="/users/sign_in">Sign in</a></li>
-                <li><a href="/users/sign_up">Sign up</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav> -->
-
-      </div>
-    </div>
-    
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>大切な人に感謝の言葉を贈りませんか？</h1>
-              <p>「ありがとう」を伝えよう</p>
-              <p><a class="btn btn-lg btn-default" href="#" role="button">カードの作成</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container marketing">
-      <div class="row">
-        <div class="col-lg-4">
-          <%= image_tag "girl.png", class: 'img-circle', width: '140', height: '140' %>
-          <h2>相手を決める</h2>
-        </div>
-        <div class="col-lg-4">
-          <%= image_tag "pencil.png", class: 'img-circle', width: '140', height: '140' %>
-          <h2>メッセージを書く</h2>
-        </div>
-        <div class="col-lg-4">
-          <%= image_tag "post.png", class: 'img-circle', width: '140', height: '140' %>
-          <h2>カードを贈る</h2>
-        </div>
-      </div>
-    </div>
+<div class="tab-content">
+  <div class="tab-pane" id="sampleContentA">
+    <p>受信カードの表示</p>
+  </div>
+  <div class="tab-pane active" id="sampleContentB">
+    <p>送信カードの表示</p>
+  </div>
+</div>
