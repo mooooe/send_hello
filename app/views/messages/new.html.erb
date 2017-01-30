@@ -1,0 +1,21 @@
+<%= form_for @message do |f| %>
+<h4>
+贈る相手の名前を入力する
+</h4>
+<%= f.text_field :user_name %>
+<h4>
+フォーマットを選ぶ
+</h4>
+<%= f.radio_button :format_id, 1 %><%= f.label :format_id, 1 %><br />
+<%= f.radio_button :format_id, 2 %><%= f.label :format_id, 2 %><br />
+<%= f.radio_button :format_id, 3 %><%= f.label :format_id, 3 %><br />
+<h4>
+カードを書く
+</h4>
+<%= f.text_area :text %><br />
+<h4>
+画像を添付する
+</h4>
+<%= f.file_field :image %><br />
+<%= f.submit 'カードを作成する' %><br />
+<% end %>
